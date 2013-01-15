@@ -1,0 +1,12 @@
+% layout 'default';
+% title 'Welcome';
+<h2><%= $message %></h2>
+
+<form method="post" action="<%= url_for('upload') %>" enctype ="multipart/form-data">
+      <div>
+        Upload CSR:
+        <input type="file" name="csr" >
+        <input type="submit" value="Upload" >
+      </div>
+</form>
+
